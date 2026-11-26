@@ -119,6 +119,24 @@ body{background-color:var(--color-porcelain);background-image:radial-gradient(el
 .kit{position:relative;overflow:hidden}.kit:after{content:'✧';position:absolute;right:17px;top:12px;font-size:27px;color:#B8798B66}
 @media(max-width:760px){.hero-logo{margin:0 auto 15px}.card img{height:clamp(138px,43vw,190px)}}
 
+/* Movimiento sutil para dar vida al hero sin distraer del catálogo */
+.hero{background-size:170% 170%;animation:heroBackdrop 24s ease-in-out infinite alternate}
+.hero>div:first-child{animation:heroIntro .9s cubic-bezier(.2,.75,.25,1) both}
+.hero-art{animation:heroArtIntro 1.1s .12s cubic-bezier(.2,.75,.25,1) both}
+.hero-logo{animation:logoDrift 7s ease-in-out infinite;transform-origin:center}
+.hero-art img{animation:heroPhotoBreathe 20s ease-in-out infinite alternate;will-change:transform}
+.hero:before{animation:heroFrameGlow 7s ease-in-out infinite alternate}
+.hero:after{animation:heroSparkle 4.8s ease-in-out infinite}
+@keyframes heroBackdrop{from{background-position:0% 20%}to{background-position:100% 80%}}
+@keyframes heroIntro{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroArtIntro{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes logoDrift{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes heroPhotoBreathe{from{transform:scale(1)}to{transform:scale(1.035)}}
+@keyframes heroFrameGlow{from{box-shadow:inset 0 0 30px #E5CBAE12;border-color:#E5CBAE66}to{box-shadow:inset 0 0 58px #E5CBAE38;border-color:#E5CBAEaa}}
+@keyframes heroSparkle{0%,100%{opacity:.5}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero,.hero>div:first-child,.hero-art,.hero-logo,.hero-art img,.hero:before,.hero:after{animation:none!important}.hero-art img{transform:none!important}}
+
+
 
 </style></head>
 <body><div class="top">GRAYIÉ · BEAUTY BOUTIQUE</div>
