@@ -169,10 +169,10 @@ body{background-color:var(--color-porcelain);background-image:radial-gradient(el
 /* Marco rococó translúcido rodeando el producto en el hero */
 .hero:after{display:none!important}
 .hero-art{overflow:visible;border-radius:14px;aspect-ratio:1.5;height:auto;max-height:340px}
-.hero-art img:not(.hero-frame){position:absolute;top:32%;left:29%;z-index:4;width:42%;height:42%;object-fit:contain;padding:5px;border:2px solid #E5CBAE;border-radius:11px;background:#FFFDFB;box-shadow:0 8px 24px #71505F30;animation:none!important;transform:none!important;will-change:auto}
+.hero-art img:not(.hero-frame){position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover;padding:0;border:0;border-radius:0;background:transparent;clip-path:ellipse(27.7% 33% at 50% 55%);box-shadow:none;animation:none!important;transform:none!important;will-change:auto}
 .hero-art .hero-frame{position:absolute;z-index:3;top:-10%;left:-9%;width:118%;height:120%;object-fit:fill;opacity:1;pointer-events:none;animation:none!important;transform:none!important;will-change:auto;filter:drop-shadow(0 5px 9px #71505F25)}
 .hero-art:after{z-index:5}
-@media(max-width:760px){.video-carousel{gap:12px;padding:8px 2px 16px}.video-card{flex-basis:74vw;max-width:280px}.carousel-btn{width:38px;height:38px}.video-note{padding:16px;align-items:flex-start}.video-note strong{font-size:16px}.hero-art{aspect-ratio:1.45;max-height:none;border-radius:12px}.hero-art .hero-frame{top:-9%;left:-8%;width:116%;height:118%}.hero-art img:not(.hero-frame){top:32%;left:28%;width:44%;height:43%;border-radius:9px}}
+@media(max-width:760px){.video-carousel{gap:12px;padding:8px 2px 16px}.video-card{flex-basis:74vw;max-width:280px}.carousel-btn{width:38px;height:38px}.video-note{padding:16px;align-items:flex-start}.video-note strong{font-size:16px}.hero-art{aspect-ratio:1.45;max-height:none;border-radius:12px}.hero-art .hero-frame{top:-9%;left:-8%;width:116%;height:118%}.hero-art img:not(.hero-frame){clip-path:ellipse(27.3% 32.5% at 50% 55%)}}
 @media(prefers-reduced-motion:reduce){.video-carousel{scroll-behavior:auto}}
 </style></head>
 <body><div class="top">GRAYIÉ · BEAUTY BOUTIQUE</div>
