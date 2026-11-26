@@ -136,6 +136,15 @@ body{background-color:var(--color-porcelain);background-image:radial-gradient(el
 @keyframes heroSparkle{0%,100%{opacity:.5}50%{opacity:1}}
 @media(prefers-reduced-motion:reduce){.hero,.hero>div:first-child,.hero-art,.hero-logo,.hero-art img,.hero:before,.hero:after{animation:none!important}.hero-art img{transform:none!important}}
 
+/* Lightbox en colores de la marca; las fotografías permanecen sin filtros */
+#imageLightbox{border:1px solid #E5CBAE;background:#FBF5F2;color:#71505F;box-shadow:0 24px 100px #39253255}
+#imageLightbox::backdrop{background:#71505F99;backdrop-filter:blur(7px)}
+#imageLightbox .lightbox-bar{color:#71505F}
+#imageLightbox button{border:1px solid #E5CBAE;background:#B8798B;color:#fff}
+#imageLightbox button:hover{background:#965D70}
+#imageLightbox img{background:#FBF5F2;border:1px solid #EAD9D7}
+
+
 
 
 </style></head>
