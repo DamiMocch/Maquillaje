@@ -182,21 +182,21 @@ body{background-color:var(--color-porcelain);background-image:radial-gradient(el
 .hero-art{position:relative;width:100%;height:auto;max-height:none;aspect-ratio:auto;display:flex;flex-direction:column;align-items:center;gap:15px;overflow:visible;border:0;border-radius:0;background:transparent;box-shadow:none}
 .hero-art:after{content:none!important;display:none!important}
 .hero-mirror{position:relative;width:min(100%,760px);aspect-ratio:1.5;overflow:visible}
-.hero-product-window{position:absolute;left:50%;top:59.6%;z-index:3;width:38.3%;height:76.6%;transform:translate(-50%,-50%);overflow:hidden;clip-path:ellipse(50% 50% at 50% 50%)}
-.hero-art .hero-photo{position:absolute!important;inset:0!important;z-index:1!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;clip-path:none!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;animation:none!important;transform:none!important;will-change:auto}
+.hero-product-window{position:absolute;left:50%;top:59.6%;z-index:3;width:40.3%;height:80.6%;transform:translate(-50%,-50%);overflow:hidden;clip-path:ellipse(50% 50% at 50% 50%)}
+.hero-art .hero-photo{position:absolute!important;inset:0!important;z-index:1!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;clip-path:none!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;animation:none!important;transform:scale(1.08)!important;will-change:auto}
 .hero-mirror:before,.hero-mirror:after{content:"";position:absolute;left:50%;top:59.6%;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none}
-.hero-mirror:before{z-index:4;width:41.4%;height:82.8%;border:5px solid #C99A55;outline:1px solid #FFF1CF;box-shadow:0 0 0 2px #A86F37,inset 0 0 0 2px #F1D28E,0 5px 14px #71505F44}
-.hero-mirror:after{z-index:5;width:39.8%;height:79.6%;border:1px solid #FFF5DC;box-shadow:inset 0 0 0 1px #B87955}
+.hero-mirror:before{z-index:4;width:43.7%;height:87.4%;border:5px solid #C99A55;outline:1px solid #FFF1CF;box-shadow:0 0 0 2px #A86F37,inset 0 0 0 2px #F1D28E,0 5px 14px #71505F44}
+.hero-mirror:after{z-index:5;width:42.1%;height:84.2%;border:1px solid #FFF5DC;box-shadow:inset 0 0 0 1px #B87955}
 .hero-art .hero-frame{position:absolute;left:6%;top:-5%;z-index:6;width:88%;height:88%;object-fit:contain;object-position:center;clip-path:none!important;-webkit-clip-path:none!important;mask:none!important;border-radius:0!important;opacity:1;pointer-events:none;filter:none;animation:none!important;transform:none!important;will-change:auto}
 .hero-caption{position:relative;z-index:5;padding:10px 18px;border:0;border-radius:999px;background:#FFFDFB;color:#71505F;box-shadow:0 4px 14px #71505F12;font:italic 15px 'Playfair Display';text-align:center}
-@media(max-width:760px){.hero{background:#FBF5F2!important;grid-template-columns:minmax(0,1fr)}.hero-art{gap:12px}.hero-mirror{width:min(100%,580px)}.hero-product-window{width:38.3%;height:76.6%}.hero-caption{font-size:14px;padding:9px 15px}}
+@media(max-width:760px){.hero{background:#FBF5F2!important;grid-template-columns:minmax(0,1fr)}.hero-art{gap:12px}.hero-mirror{width:min(100%,580px)}.hero-product-window{width:40.3%;height:80.6%}.hero-caption{font-size:14px;padding:9px 15px}}
 .hero-art .hero-photo{opacity:0!important;transition:opacity .45s ease!important}
 .hero-art .hero-photo.is-ready{opacity:1!important}
 .hero-art .hero-photo.is-ready.is-changing{opacity:.12!important}
 </style></head>
 <body><div class="top">GRAYIÉ · BEAUTY BOUTIQUE</div>
 <nav class="nav"><a class="brand" href="#inicio" aria-label="GRAYIÉ Beauty Boutique"><img src="assets/grayie-logo.png" alt="GRAYIÉ Beauty Boutique"></a><div class="navlinks"><a href="#catalogo">Flower Knows</a><a href="#cheeryep">Cheeryep</a><a href="#colecciones">Colecciones</a><a href="#kits">Sets</a><a href="#videos">Videos</a></div></nav>
-<header class="hero" id="inicio"><div><img class="hero-logo" src="assets/grayie-logo.png" alt="GRAYIÉ Beauty Boutique"><div class="eyebrow">Tu pequeño universo de belleza</div><h1>Un toque de<br>magia en tu tocador</h1><p>Un pequeño universo de Flower Knows y Cheeryep: colecciones de fantasía, tonos expresivos y tesoros para tu tocador.</p><a class="btn" href="#catalogo">Explorar catálogo</a><a class="btn light" href="#kits">Ver kits disponibles</a></div><div class="hero-art"><div class="hero-mirror"><div class="hero-product-window"><img class="hero-photo" src="https://flowerknows.co/cdn/shop/files/01_f873e5f4-d700-4c6f-8713-2dbf750052a4.jpg?v=1789020439" alt="Paleta Snow Ballet de Flower Knows"></div><img class="hero-frame" src="assets/hero-rococo-frame.png" alt="" aria-hidden="true"></div><div class="hero-caption">✧ Belleza de cuento, hecha para ti ✧</div></div></header>
+<header class="hero" id="inicio"><div><img class="hero-logo" src="assets/grayie-logo.png" alt="GRAYIÉ Beauty Boutique"><div class="eyebrow">Tu pequeño universo de belleza</div><h1>Un toque de<br>magia en tu tocador</h1><p>Un pequeño universo de Flower Knows y Cheeryep: colecciones de fantasía, tonos expresivos y tesoros para tu tocador.</p><a class="btn" href="#catalogo">Explorar catálogo</a><a class="btn light" href="#kits">Ver kits disponibles</a></div><div class="hero-art"><div class="hero-mirror"><div class="hero-product-window"><img class="hero-photo" src="https://flowerknows.co/cdn/shop/files/13652__1.jpg?v=1789022834&width=900" alt="Colección completa Snow Ballet de Flower Knows"></div><img class="hero-frame" src="assets/hero-rococo-frame.png" alt="" aria-hidden="true"></div><div class="hero-caption">✧ Belleza de cuento, hecha para ti ✧</div></div></header>
 <main>
 <section class="wrap" id="catalogo"><div class="section-head"><div><div class="eyebrow">Piezas de cuento</div><h2>Flower Knows · compra por categoría</h2></div><p>Explora labios, paletas, rostro y brochas de Flower Knows. Ofrecemos productos a precios más bajos que en la tienda; consulta precio y disponibilidad por WhatsApp.</p></div><div class="filters" id="filters"></div><div class="grid" id="products"></div><nav class="pagination" id="productsPagination" aria-label="Paginación del catálogo Flower Knows"></nav><p class="note">Cada pieza se encarga sobre pedido. Consulta inventario, precio y disponibilidad antes de confirmar.</p></section>
 <section class="wrap" id="cheeryep"><div class="section-head"><div><div class="eyebrow">Una nueva constelación de color</div><h2>Descubre Cheeryep</h2></div><p>Sombras, rubor, iluminador y labios de Cheeryep. Los tonos se muestran según las opciones publicadas por la marca.</p></div><div class="grid" id="cheeryepProducts"></div><nav class="pagination" id="cheeryepPagination" aria-label="Paginación de paletas Cheeryep"></nav><div class="palette-intro" style="margin-top:42px"><div class="eyebrow">Más esenciales Cheeryep</div><h3 style="font:600 26px 'Playfair Display';margin:8px 0">Rostro y labios</h3></div><div class="grid" id="cheeryepEssentials"></div></section>
@@ -284,28 +284,6 @@ products.push(
 {cat:'Perfumes',line:'Flower Knows',name:'Rosy Daydream Set',tones:'Set de perfumería; confirmar composición y disponibilidad',img:'https://flowerknows.co/cdn/shop/files/RosyDaydreamSet.jpg?v=1770362335&width=1500'},
 {cat:'Perfumes',line:'Flower Knows',name:'Breeze & Bloom Perfume Duo Set',tones:'Dúo de perfumes; confirmar selección de fragancias',img:'https://flowerknows.co/cdn/shop/files/BreezeBloomSet.jpg?v=1770362335&width=1500'}
  );
-const heroFeaturedProducts=products.filter(p=>p.cat==='Paletas'&&p.img);
-const heroProductImage=document.querySelector('.hero-photo');
-const initialHeroIndex=heroFeaturedProducts.findIndex(p=>p.line==='Snow Ballet'&&p.name==='Six-Color Satin Makeup Palette');
-let activeHeroIndex=initialHeroIndex>=0?initialHeroIndex:0;
-let heroRequest=0;
-const failedHeroProducts=new Set();
-function heroImageFor(product){return product.line==='Snow Ballet'&&product.name==='Six-Color Satin Makeup Palette'?product.img:(product.packageImg||product.img)}
-function showHeroProduct(index){
- if(!heroFeaturedProducts.length)return;
- const product=heroFeaturedProducts[index];
- if(!product||failedHeroProducts.has(index))return nextHeroProduct(index+1);
- const request=++heroRequest,preload=new Image();
- preload.onload=()=>{if(request!==heroRequest)return;activeHeroIndex=index;heroProductImage.classList.add('is-changing');window.setTimeout(()=>{if(request!==heroRequest)return;heroProductImage.src=preload.src;heroProductImage.alt=`${product.line} · ${product.name} de Flower Knows`;heroProductImage.classList.add('is-ready');heroProductImage.classList.remove('is-changing')},180)};
- preload.onerror=()=>{failedHeroProducts.add(index);nextHeroProduct(index+1)};
- preload.src=heroImageFor(product);
-}
-function nextHeroProduct(from=activeHeroIndex+1){
- if(!heroFeaturedProducts.length)return;
- for(let step=0;step<heroFeaturedProducts.length;step++){const index=(from+step)%heroFeaturedProducts.length;if(!failedHeroProducts.has(index)){showHeroProduct(index);return}}
-}
-showHeroProduct(activeHeroIndex);
-window.setInterval(()=>{if(!document.hidden)nextHeroProduct(activeHeroIndex+1)},8000);
 const cheeryepPaletteProducts=[
 {name:'Forbidden Garden Gift Set',info:'Set de paleta(s) y accesorios; confirmar contenido y disponibilidad',img:'https://www.cheeryep.com/cdn/shop/files/img_v3_0215r_fdcf4cfc-6ac4-49f6-9cd5-c28e0b0a5dfg.jpg?v=1790243117&width=700',url:'https://www.cheeryep.com/collections/16-color-eyeshadow-palette'},
 {name:'23# The Fall',info:'Paleta de sombras de 16 tonos',img:'https://www.cheeryep.com/cdn/shop/files/e1f6601194187de489ebeb51a86020b3.png?v=1790238934&width=700',url:'https://www.cheeryep.com/collections/16-color-eyeshadow-palette'},
@@ -397,6 +375,27 @@ const lines=[
 ];
 const collectionWhatsApp=name=>'https://wa.me/525617443340?text='+encodeURIComponent(`Hola, me interesa la colección ${name}. ¿Qué productos y sets completos tienes disponibles?`);
 document.querySelector('#collections').innerHTML=lines.map(({name,img,alt})=>`<article class="collection"><img class="collection-image" loading="lazy" src="${img}" alt="${alt}"><div class="collection-copy"><b>${name}</b><small>Set completo · disponibilidad por confirmar</small><a class="btn collection-link" href="${collectionWhatsApp(name)}" target="_blank" rel="noopener">Consultar colección</a></div></article>`).join('');
+const heroFeaturedCollections=lines.filter(collection=>collection.img);
+const heroProductImage=document.querySelector('.hero-photo');
+const initialHeroIndex=Math.max(0,heroFeaturedCollections.findIndex(collection=>collection.name==='Snow Ballet'));
+let activeHeroIndex=initialHeroIndex;
+let heroRequest=0;
+const failedHeroCollections=new Set();
+function showHeroCollection(index){
+ if(!heroFeaturedCollections.length)return;
+ const collection=heroFeaturedCollections[index];
+ if(!collection||failedHeroCollections.has(index))return nextHeroCollection(index+1);
+ const request=++heroRequest,preload=new Image();
+ preload.onload=()=>{if(request!==heroRequest)return;activeHeroIndex=index;heroProductImage.classList.add('is-changing');window.setTimeout(()=>{if(request!==heroRequest)return;heroProductImage.src=preload.src;heroProductImage.alt=`Colección completa ${collection.name} de Flower Knows`;heroProductImage.classList.add('is-ready');heroProductImage.classList.remove('is-changing')},180)};
+ preload.onerror=()=>{failedHeroCollections.add(index);nextHeroCollection(index+1)};
+ preload.src=collection.img;
+}
+function nextHeroCollection(from=activeHeroIndex+1){
+ if(!heroFeaturedCollections.length)return;
+ for(let step=0;step<heroFeaturedCollections.length;step++){const index=(from+step)%heroFeaturedCollections.length;if(!failedHeroCollections.has(index)){showHeroCollection(index);return}}
+}
+showHeroCollection(activeHeroIndex);
+window.setInterval(()=>{if(!document.hidden)nextHeroCollection(activeHeroIndex+1)},8000);
 
 const lightbox=document.querySelector('#imageLightbox'),lightboxImage=document.querySelector('#lightboxImage'),lightboxCaption=document.querySelector('#lightboxCaption');
 function showSetImage(src,caption){lightboxImage.src=src;lightboxImage.alt=caption;lightboxCaption.textContent=caption;lightbox.showModal()}
